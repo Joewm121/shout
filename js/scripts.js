@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var wordsInput = $("input#words").val(); 
+    var wordsInput = $("input#words").val();
 
-    $(".shout").text(wordsInput);
+    $(".shout").text(wordsInput.toUpperCase());
 
   event.preventDefault();
   });
